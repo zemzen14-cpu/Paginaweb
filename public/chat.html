@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="chat-page">
+
+  <!-- NAV -->
+  <nav>
+    <a href="/" class="btn-volver">← Volver</a>
+    <div class="logo" id="nav-nombre">⚔️ LoL Chat</div>
+    <div></div>
+  </nav>
+
+  <!-- CHAT -->
+  <div class="chat-wrapper">
+
+    <!-- HEADER CON FOTO Y NOMBRE -->
+    <div class="chat-header" id="chat-header">
+      <img id="avatar-img" src="" alt="avatar"/>
+      <div>
+        <h2 id="nombre-personaje">...</h2>
+        <span class="estado">● En línea</span>
+      </div>
+    </div>
+
+    <!-- MENSAJES -->
+    <div class="mensajes" id="mensajes"></div>
+
+    <!-- TYPING ANIMADO -->
+    <div class="typing" id="typing" style="display:none">
+      <span></span><span></span><span></span>
+    </div>
+
+    <!-- INPUT -->
+    <div class="input-area">
+      <input
+        type="text"
+        id="inputMsg"
+        placeholder="Escribe tu mensaje..."
+        autocomplete="off"
+      />
+      <button onclick="enviarMensaje()">➤</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
